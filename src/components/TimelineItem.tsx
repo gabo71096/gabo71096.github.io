@@ -50,7 +50,7 @@ export default function TimelineItem({
           />
         )}
       </div>
-      <div className={cn("pb-8", isLast ? "pb-0" : "")}>
+      <div className={cn("pb-8 w-full", isLast ? "pb-0" : "")}>
         <motion.div
           className="flex flex-col gap-0.5"
           initial={{ opacity: 0, x: -20 }}
