@@ -82,16 +82,10 @@ export const workExperience = [
 
 export const education = [
   {
-    institution: "Sri Krishna College of Engineering and Technology",
-    location: "Coimbatore, India",
-    degree: "B Tech Information Technology",
-    period: "Jun 2021 - Jun 2025",
-    achievements: [
-      "President of the Department of Information Technology",
-      "G20 student delegate",
-      "Organized multiple technical workshops and events",
-      "Represented my college in multiple national and international hackathons and won.",
-    ],
+    institution: "Instituto Profesional Providencia",
+    location: "Santiago, Chile",
+    degree: "Associate Degree in Information Technology",
+    period: "2018 - 2022",
   },
 ];
 export const skills = {
