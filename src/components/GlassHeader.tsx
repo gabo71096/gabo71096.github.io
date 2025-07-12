@@ -10,8 +10,8 @@ export default function GlassHeader() {
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
   return (
-    <header className="sticky z-50 w-full backdrop-blur-md backdrop-filter bg-background/70 dark:bg-background/40 border-b border-border/40 supports-[backdrop-filter]:bg-background/60">
-      <div className="container max-w-4xl mx-auto p-4 flex justify-between items-center">
+    <header className="bg-background/70 dark:bg-background/40 border-border/40 supports-[backdrop-filter]:bg-background/60 sticky z-50 w-full border-b backdrop-blur-md backdrop-filter">
+      <div className="container mx-auto flex max-w-4xl items-center justify-between p-4">
         <motion.a
           className="flex items-center text-lg font-medium"
           href="/"
@@ -22,12 +22,12 @@ export default function GlassHeader() {
         </motion.a>
 
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex items-center space-x-6 text-sm font-medium">
+        <nav className="hidden items-center space-x-6 text-sm font-medium md:flex">
           {["experience", "skills", "education"].map((item, index) => (
             <motion.a
               key={item}
               href={`#${item}`}
-              className="transition-colors hover:text-foreground/80 text-foreground/60"
+              className="hover:text-foreground/80 text-foreground/60 transition-colors"
               initial={{ opacity: 0, y: -10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.2, delay: index * 0.1 }}
@@ -46,7 +46,7 @@ export default function GlassHeader() {
 
           {/* Mobile Menu Button */}
           <motion.button
-            className="md:hidden p-2 text-foreground"
+            className="text-foreground p-2 md:hidden"
             onClick={toggleMenu}
             aria-label="Toggle menu"
             whileTap={{ scale: 0.95 }}
@@ -60,31 +60,29 @@ export default function GlassHeader() {
       <AnimatePresence>
         {isMenuOpen && (
           <motion.div
-            className="md:hidden py-4 px-4 border-t border-border/10 backdrop-blur-md backdrop-filter bg-background/80 dark:bg-background/40"
+            className="border-border/10 bg-background/80 dark:bg-background/40 border-t px-4 py-4 backdrop-blur-md backdrop-filter md:hidden"
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.3 }}
           >
             <nav className="flex flex-col space-y-4 text-sm font-medium">
-              {["experience", "skills", "education"].map(
-                (item, index) => (
-                  <motion.a
-                    key={item}
-                    href={`#${item}`}
-                    className="transition-colors hover:text-foreground/80 text-foreground/60 py-2"
-                    onClick={toggleMenu}
-                    initial={{ opacity: 0, x: -20 }}
-                    animate={{ opacity: 1, x: 0 }}
-                    transition={{ duration: 0.2, delay: index * 0.1 }}
-                  >
-                    {item === "experience" && "💼 "}
-                    {item === "skills" && "🛠️ "}
-                    {item === "education" && "🎓 "}
-                    {item.charAt(0).toUpperCase() + item.slice(1)}
-                  </motion.a>
-                ),
-              )}
+              {["experience", "skills", "education"].map((item, index) => (
+                <motion.a
+                  key={item}
+                  href={`#${item}`}
+                  className="hover:text-foreground/80 text-foreground/60 py-2 transition-colors"
+                  onClick={toggleMenu}
+                  initial={{ opacity: 0, x: -20 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.2, delay: index * 0.1 }}
+                >
+                  {item === "experience" && "💼 "}
+                  {item === "skills" && "🛠️ "}
+                  {item === "education" && "🎓 "}
+                  {item.charAt(0).toUpperCase() + item.slice(1)}
+                </motion.a>
+              ))}
             </nav>
           </motion.div>
         )}

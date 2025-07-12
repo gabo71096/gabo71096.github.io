@@ -27,17 +27,17 @@ export default function HeroSection() {
   };
 
   return (
-    <section className="py-16 md:py-24 relative overflow-hidden">
-      <div className="container max-w-4xl mx-auto px-6 md:px-4 relative z-10">
+    <section className="relative overflow-hidden py-16 md:py-24">
+      <div className="relative z-10 container mx-auto max-w-4xl px-6 md:px-4">
         <motion.div
-          className="flex flex-col md:flex-row md:items-center justify-between mb-8"
+          className="mb-8 flex flex-col justify-between md:flex-row md:items-center"
           variants={containerVariants}
           initial="hidden"
           animate="visible"
         >
           <div className="text-center md:text-left">
             <motion.h1
-              className="text-4xl font-bold mb-2"
+              className="mb-2 text-4xl font-bold"
               variants={childVariants}
             >
               {personalInfo.name}{" "}
@@ -45,22 +45,22 @@ export default function HeroSection() {
             </motion.h1>
 
             <motion.p
-              className="text-xl text-muted-foreground mb-6"
+              className="text-muted-foreground mb-6 text-xl"
               variants={childVariants}
             >
               Software Engineer 👨‍💻
             </motion.p>
 
             <motion.div
-              className="flex flex-col gap-2 items-center md:items-start"
+              className="flex flex-col items-center gap-2 md:items-start"
               variants={containerVariants}
             >
               <motion.div
-                className="flex items-center text-sm text-muted-foreground"
+                className="text-muted-foreground flex items-center text-sm"
                 variants={childVariants}
                 whileHover={{ scale: 1.05, color: "#4b5563" }}
               >
-                <MapPin className="h-4 w-4 mr-2" />
+                <MapPin className="mr-2 h-4 w-4" />
                 📍 {personalInfo.location}
               </motion.div>
 
@@ -68,11 +68,11 @@ export default function HeroSection() {
                 href={personalInfo.github}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center text-sm text-muted-foreground hover:text-foreground transition-colors"
+                className="text-muted-foreground hover:text-foreground flex items-center text-sm transition-colors"
                 variants={childVariants}
                 whileHover={{ scale: 1.05, color: "#4b5563" }}
               >
-                <Github className="h-4 w-4 mr-2" />
+                <Github className="mr-2 h-4 w-4" />
                 🌟 GitHub
               </motion.a>
 
@@ -80,28 +80,28 @@ export default function HeroSection() {
                 href={personalInfo.linkedin}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center text-sm text-muted-foreground hover:text-foreground transition-colors"
+                className="text-muted-foreground hover:text-foreground flex items-center text-sm transition-colors"
                 variants={childVariants}
                 whileHover={{ scale: 1.05, color: "#4b5563" }}
               >
-                <Linkedin className="h-4 w-4 mr-2" />
+                <Linkedin className="mr-2 h-4 w-4" />
                 🔗 LinkedIn
               </motion.a>
             </motion.div>
           </div>
 
           <motion.div
-            className="mt-6 md:mt-0 flex justify-center"
+            className="mt-6 flex justify-center md:mt-0"
             variants={childVariants}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
             <div className="relative">
-              <div className="absolute -inset-1 bg-gradient-to-r from-green-400 via-green-500 to-emerald-500 rounded-full blur opacity-30 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"></div>
+              <div className="absolute -inset-1 rounded-full bg-gradient-to-r from-green-400 via-green-500 to-emerald-500 opacity-30 blur transition duration-1000 group-hover:opacity-100 group-hover:duration-200"></div>
               <img
                 src="/profile.jpeg"
                 alt="Profile"
-                className="w-48 md:w-60 rounded-full relative ring-2 ring-green-500/50"
+                className="relative w-48 rounded-full ring-2 ring-green-500/50 md:w-60"
                 style={{ objectFit: "cover" }}
               />
             </div>
@@ -109,9 +109,9 @@ export default function HeroSection() {
         </motion.div>
 
         <MotionWrapper>
-          <div className="bg-gradient-to-r from-green-500/10 to-emerald-500/10 backdrop-blur-sm backdrop-filter p-4 rounded-lg border border-green-500/20 dark:border-green-500/10 shadow-sm">
-            <p className="text-muted-foreground pl-4 py-2 mb-4 relative">
-              <span className="absolute left-0 top-0 h-full w-1 bg-gradient-to-b from-green-500 to-emerald-500 rounded-full"></span>
+          <div className="rounded-lg border border-green-500/20 bg-gradient-to-r from-green-500/10 to-emerald-500/10 p-4 shadow-sm backdrop-blur-sm backdrop-filter dark:border-green-500/10">
+            <p className="text-muted-foreground relative mb-4 py-2 pl-4">
+              <span className="absolute top-0 left-0 h-full w-1 rounded-full bg-gradient-to-b from-green-500 to-emerald-500"></span>
               🚀 I am a Software Developer with{" "}
               {new Date().getFullYear() - 2020}+ years of experience working as
               a Full-Stack and Front-End developer. I have knowledge of

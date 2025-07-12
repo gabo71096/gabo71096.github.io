@@ -23,7 +23,7 @@ export default function ThemeToggle() {
       variant="ghost"
       size="icon"
       onClick={toggleTheme}
-      className="rounded-full cursor-pointer"
+      className="cursor-pointer rounded-full"
     >
       {theme === "light" ? (
         <Moon className="h-5 w-5" />

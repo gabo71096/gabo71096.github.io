@@ -29,7 +29,7 @@ export default function TimelineItem({
     >
       <div className="flex flex-col items-center">
         <motion.div
-          className="flex h-[18px] w-[18px] rounded-full border border-green-500/50 bg-background dark:bg-muted z-10"
+          className="bg-background dark:bg-muted z-10 flex h-[18px] w-[18px] rounded-full border border-green-500/50"
           initial={{ scale: 0 }}
           whileInView={{ scale: 1 }}
           transition={{
@@ -50,7 +50,7 @@ export default function TimelineItem({
           />
         )}
       </div>
-      <div className={cn("pb-8 w-full", isLast ? "pb-0" : "")}>
+      <div className={cn("w-full pb-8", isLast ? "pb-0" : "")}>
         <motion.div
           className="flex flex-col gap-0.5"
           initial={{ opacity: 0, x: -20 }}
@@ -59,8 +59,8 @@ export default function TimelineItem({
           viewport={{ once: true, margin: "-50px" }}
         >
           <h3 className="font-medium">{title}</h3>
-          <p className="text-sm text-muted-foreground">{subtitle}</p>
-          <p className="text-xs text-muted-foreground/70 mb-2">{date}</p>
+          <p className="text-muted-foreground text-sm">{subtitle}</p>
+          <p className="text-muted-foreground/70 mb-2 text-xs">{date}</p>
         </motion.div>
         <motion.div
           initial={{ opacity: 0 }}

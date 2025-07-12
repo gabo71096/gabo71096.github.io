@@ -6,8 +6,10 @@ interface Props {
   description?: string;
 }
 
-const { title = "Gabriel López - Portfolio", description = "Gabriel's Portfolio" } =
-  Astro.props;
+const {
+  title = "Gabriel López - Portfolio",
+  description = "Gabriel's Portfolio",
+} = Astro.props;
 ---
 
 <!doctype html>
@@ -27,10 +29,10 @@ const { title = "Gabriel López - Portfolio", description = "Gabriel's Portfolio
     />
   </head>
   <body
-    class="min-h-screen bg-background font-sans antialiased selection:bg-green-500/20 selection:text-green-500"
+    class="bg-background min-h-screen font-sans antialiased selection:bg-green-500/20 selection:text-green-500"
   >
     <div
-      class="fixed inset-0 -z-10 h-full w-full bg-background bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(34,150,94,0.1),rgba(255,255,255,0))]"
+      class="bg-background fixed inset-0 -z-10 h-full w-full bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(34,150,94,0.1),rgba(255,255,255,0))]"
     >
     </div>
     <slot />
