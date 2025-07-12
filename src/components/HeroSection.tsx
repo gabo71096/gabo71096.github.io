@@ -1,5 +1,5 @@
 import { personalInfo } from "@/lib/data";
-import { Mail, Github, MapPin, Linkedin } from "lucide-react";
+import { Github, MapPin, Linkedin } from "lucide-react";
 import { motion } from "framer-motion";
 import MotionWrapper from "./MotionWrapper";
 
@@ -65,16 +65,6 @@ export default function HeroSection() {
               </motion.div>
 
               <motion.a
-                href={`mailto:${personalInfo.email}`}
-                className="flex items-center text-sm text-muted-foreground hover:text-foreground transition-colors"
-                variants={childVariants}
-                whileHover={{ scale: 1.05, color: "#4b5563" }}
-              >
-                <Mail className="h-4 w-4 mr-2" />
-                ✉️ {personalInfo.email}
-              </motion.a>
-
-              <motion.a
                 href={personalInfo.github}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -109,7 +99,7 @@ export default function HeroSection() {
             <div className="relative">
               <div className="absolute -inset-1 bg-gradient-to-r from-pink-500 to-purple-500 rounded-full blur opacity-30 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"></div>
               <img
-                src="/profile.jpg"
+                src="/profile.jpeg"
                 alt="Profile"
                 className="w-48 md:w-60 rounded-full relative ring-2 ring-purple-500/50"
                 style={{ objectFit: "cover" }}
@@ -122,15 +112,19 @@ export default function HeroSection() {
           <div className="bg-gradient-to-r from-purple-500/10 to-pink-500/10 backdrop-blur-sm backdrop-filter p-4 rounded-lg border border-purple-500/20 dark:border-purple-500/10 shadow-sm">
             <p className="text-muted-foreground pl-4 py-2 mb-4 relative">
               <span className="absolute left-0 top-0 h-full w-1 bg-gradient-to-b from-purple-500 to-pink-500 rounded-full"></span>
-              🚀 Passionate software engineer with a versatile skill set
-              spanning multiple domains. I thrive on solving complex challenges
-              across different platforms and environments, adapting quickly to
-              new technologies and methodologies. My holistic approach combines
-              technical expertise with creative problem-solving, allowing me to
-              develop solutions that are both innovative and practical. I'm
-              driven by continuous learning and a commitment to excellence,
-              whether working independently or collaborating with diverse teams
-              to create impactful, scalable solutions.
+              🚀 I am a Software Developer with{" "}
+              {new Date().getFullYear() - 2020}+ years of experience working as
+              a Full-Stack and Front-End developer. I have knowledge of
+              frameworks such as Ruby on Rails, Express.js, Fastify, FastAPI,
+              ElysiaJS, .NET, Next.js; libraries such as Bootstrap, React,
+              TailwindCSS, ShadCN; and languages such as Ruby, Python,
+              TypeScript, C#, among others. I have developed projects of varying
+              complexity, such as simple static web pages, API clients that
+              report COVID results to Ministry of Health, complex multi-step
+              forms for the biggest railway company in New Zealand (KiwiRail),
+              LIMS software (Laboratorio GenoSUR), blogs (Mamá, Te Entiendo) and
+              inventory apps (Europ Assistance). In addition, I am fluent in
+              both Spanish and English.
             </p>
           </div>
         </MotionWrapper>
