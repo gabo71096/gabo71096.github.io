@@ -1,13 +1,13 @@
 {
-  "name": "my-portfolio",
+  "name": "gabriel-portfolio",
   "type": "module",
   "version": "0.0.1",
-  "description": "Modern portfolio template with animations and glassmorphism effects",
-  "author": "Rishikesh S",
+  "description": "Gabriel's Portfolio",
+  "author": "Gabriel López",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/rishikesh2003/my-portfolio"
+    "url": "https://github.com/gabo71096/gabo71096.github.io"
   },
   "scripts": {
     "dev": "astro dev",
