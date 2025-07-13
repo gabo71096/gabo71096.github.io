@@ -112,7 +112,7 @@ export default function HeroSection() {
           <div className="rounded-lg border border-green-500/20 bg-gradient-to-r from-green-500/10 to-emerald-500/10 p-4 shadow-sm backdrop-blur-sm backdrop-filter dark:border-green-500/10">
             <p className="text-muted-foreground relative mb-4 py-2 pl-4">
               <span className="absolute top-0 left-0 h-full w-1 rounded-full bg-gradient-to-b from-green-500 to-emerald-500"></span>
-              🚀 I am a Software Developer with{" "}
+              🚀 I am a Software Engineer with{" "}
               {new Date().getFullYear() - 2020}+ years of experience working as
               a Full-Stack and Front-End developer. I have knowledge of
               frameworks such as Ruby on Rails, Express.js, Fastify, FastAPI,
