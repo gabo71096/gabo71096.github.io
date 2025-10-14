@@ -8,7 +8,13 @@ import EducationSection from "@/components/EducationSection";
 import Footer from "@/components/Footer";
 ---
 
-<Layout>
+<Layout
+  className="min-h-screen font-sans antialiased selection:bg-green-500/20 selection:text-green-500"
+>
+  <div
+    class="fixed inset-0 -z-10 h-full w-full bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(34,150,94,0.1),rgba(255,255,255,0))]"
+  >
+  </div>
   <GlassHeader client:only="react" />
   <main class="min-h-screen">
     <HeroSection client:only="react" />
