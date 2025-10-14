@@ -23,23 +23,25 @@ export default function GlassHeader() {
 
 				{/* Desktop Navigation */}
 				<nav className="hidden items-center space-x-6 text-sm font-medium md:flex">
-					{["experience", "skills", "education", "demos"].map((item, index) => (
-						<motion.a
-							key={item}
-							href={item === "demos" ? `/${item}` : `/#${item}`}
-							className="hover:text-foreground/80 text-foreground/60 transition-colors"
-							initial={{ opacity: 0, y: -10 }}
-							animate={{ opacity: 1, y: 0 }}
-							transition={{ duration: 0.2, delay: index * 0.1 }}
-							whileHover={{ y: -2 }}
-						>
-							{item === "experience" && "💼 "}
-							{item === "skills" && "🛠️ "}
-							{item === "education" && "🎓 "}
-							{item === "demos" && "🎥 "}
-							{item.charAt(0).toUpperCase() + item.slice(1)}
-						</motion.a>
-					))}
+					{["experience", "skills", "education", "projects"].map(
+						(item, index) => (
+							<motion.a
+								key={item}
+								href={item === "projects" ? `/${item}` : `/#${item}`}
+								className="hover:text-foreground/80 text-foreground/60 transition-colors"
+								initial={{ opacity: 0, y: -10 }}
+								animate={{ opacity: 1, y: 0 }}
+								transition={{ duration: 0.2, delay: index * 0.1 }}
+								whileHover={{ y: -2 }}
+							>
+								{item === "experience" && "💼 "}
+								{item === "skills" && "🛠️ "}
+								{item === "education" && "🎓 "}
+								{item === "projects" && "🎥 "}
+								{item.charAt(0).toUpperCase() + item.slice(1)}
+							</motion.a>
+						),
+					)}
 				</nav>
 
 				<div className="flex items-center space-x-2">
@@ -68,11 +70,11 @@ export default function GlassHeader() {
 						transition={{ duration: 0.3 }}
 					>
 						<nav className="flex flex-col space-y-4 text-sm font-medium">
-							{["experience", "skills", "education", "demos"].map(
+							{["experience", "skills", "education", "projects"].map(
 								(item, index) => (
 									<motion.a
 										key={item}
-										href={item === "demos" ? `/${item}` : `/#${item}`}
+										href={item === "projects" ? `/${item}` : `/#${item}`}
 										className="hover:text-foreground/80 text-foreground/60 py-2 transition-colors"
 										onClick={toggleMenu}
 										initial={{ opacity: 0, x: -20 }}
@@ -82,7 +84,7 @@ export default function GlassHeader() {
 										{item === "experience" && "💼 "}
 										{item === "skills" && "🛠️ "}
 										{item === "education" && "🎓 "}
-										{item === "demos" && "🎥 "}
+										{item === "projects" && "🎥 "}
 										{item.charAt(0).toUpperCase() + item.slice(1)}
 									</motion.a>
 								),
