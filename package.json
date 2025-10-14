@@ -1,41 +1,41 @@
 {
-  "name": "gabriel-portfolio",
-  "type": "module",
-  "version": "0.0.1",
-  "description": "Gabriel's Portfolio",
-  "author": "Gabriel López",
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/gabo71096/gabo71096.github.io"
-  },
-  "scripts": {
-    "dev": "astro dev",
-    "build": "astro build",
-    "preview": "astro preview",
-    "astro": "astro",
-    "format": "biome format --write"
-  },
-  "dependencies": {
-    "@astrojs/react": "4.3.0",
-    "@radix-ui/react-slot": "^1.2.3",
-    "@tailwindcss/vite": "^4.0.14",
-    "@types/react": "^19.0.12",
-    "@types/react-dom": "^19.0.4",
-    "aos": "^2.3.4",
-    "astro": "5.11.0",
-    "class-variance-authority": "^0.7.1",
-    "clsx": "^2.1.1",
-    "embla-carousel-react": "^8.6.0",
-    "framer-motion": "^12.5.0",
-    "lucide-react": "^0.483.0",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "tailwind-merge": "^3.0.2",
-    "tailwindcss": "^4.0.14",
-    "tw-animate-css": "^1.2.4"
-  },
-  "devDependencies": {
-    "@biomejs/biome": "2.2.5"
-  }
+	"name": "gabriel-portfolio",
+	"type": "module",
+	"version": "0.0.1",
+	"description": "Gabriel's Portfolio",
+	"author": "Gabriel López",
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/gabo71096/gabo71096.github.io"
+	},
+	"scripts": {
+		"dev": "astro dev --host 0.0.0.0",
+		"build": "astro build",
+		"preview": "astro preview",
+		"astro": "astro",
+		"format": "biome format --write"
+	},
+	"dependencies": {
+		"@astrojs/react": "4.3.0",
+		"@radix-ui/react-slot": "^1.2.3",
+		"@tailwindcss/vite": "^4.0.14",
+		"@types/react": "^19.0.12",
+		"@types/react-dom": "^19.0.4",
+		"astro": "5.11.0",
+		"class-variance-authority": "^0.7.1",
+		"clsx": "^2.1.1",
+		"framer-motion": "^12.5.0",
+		"lucide-react": "^0.483.0",
+		"react": "^19.0.0",
+		"react-dom": "^19.0.0",
+		"react-fast-marquee": "^1.6.5",
+		"react-medium-image-zoom": "^5.4.0",
+		"tailwind-merge": "^3.0.2",
+		"tailwindcss": "^4.0.14",
+		"tw-animate-css": "^1.2.4"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "2.2.5"
+	}
 }
