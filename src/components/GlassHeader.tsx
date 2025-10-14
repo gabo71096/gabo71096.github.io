@@ -26,7 +26,7 @@ export default function GlassHeader() {
 					{["experience", "skills", "education", "demos"].map((item, index) => (
 						<motion.a
 							key={item}
-							href={item === "demos" ? `/${item}` : `#${item}`}
+							href={item === "demos" ? `/${item}` : `/#${item}`}
 							className="hover:text-foreground/80 text-foreground/60 transition-colors"
 							initial={{ opacity: 0, y: -10 }}
 							animate={{ opacity: 1, y: 0 }}
@@ -72,7 +72,7 @@ export default function GlassHeader() {
 								(item, index) => (
 									<motion.a
 										key={item}
-										href={item === "demos" ? `/${item}` : `#${item}`}
+										href={item === "demos" ? `/${item}` : `/#${item}`}
 										className="hover:text-foreground/80 text-foreground/60 py-2 transition-colors"
 										onClick={toggleMenu}
 										initial={{ opacity: 0, x: -20 }}
