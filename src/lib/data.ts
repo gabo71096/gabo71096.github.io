@@ -10,7 +10,7 @@ export const workExperience = [
 		company: "Grupo Amoble",
 		location: "Santiago, Chile",
 		position: "Full Stack Developer and IT Support",
-		period: "July 2024 - September 2024",
+		period: "July 2024 - September 2025",
 		achievements: [
 			"Build and maintain features in Ruby on Rails, integrating platforms with SAP Business One, warehouse management systems, and other third-party software via REST APIs and webhooks.",
 			"Improve performance of MySQL and PostgreSQL databases, including query optimization and backup strategies.",
