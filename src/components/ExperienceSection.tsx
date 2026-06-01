@@ -1,8 +1,8 @@
-import { workExperience } from "@/lib/data";
-import TimelineItem from "./TimelineItem";
-import { Briefcase } from "lucide-react";
 import { motion } from "framer-motion";
+import { Briefcase } from "lucide-react";
+import { workExperience } from "@/lib/data";
 import MotionWrapper from "./MotionWrapper";
+import TimelineItem from "./TimelineItem";
 
 export default function ExperienceSection() {
 	return (

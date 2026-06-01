@@ -1,6 +1,6 @@
 import { education } from "@/lib/data";
-import TimelineItem from "./TimelineItem";
 import MotionWrapper from "./MotionWrapper";
+import TimelineItem from "./TimelineItem";
 
 export default function EducationSection() {
 	return (

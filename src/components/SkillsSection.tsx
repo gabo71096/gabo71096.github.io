@@ -1,6 +1,6 @@
+import { motion } from "framer-motion";
 import React from "react";
 import { skills } from "@/lib/data";
-import { motion } from "framer-motion";
 import MotionWrapper from "./MotionWrapper";
 import { GlassCard } from "./ui/glass-card";
 

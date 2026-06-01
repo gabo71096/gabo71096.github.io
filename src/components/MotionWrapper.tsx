@@ -1,6 +1,6 @@
-import React from "react";
-import { motion } from "framer-motion";
 import type { MotionProps } from "framer-motion";
+import { motion } from "framer-motion";
+import type React from "react";
 
 interface MotionWrapperProps extends MotionProps {
 	children: React.ReactNode;

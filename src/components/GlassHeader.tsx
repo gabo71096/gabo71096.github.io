@@ -1,8 +1,8 @@
-import ThemeToggle from "./ui/theme-toggle";
-import { personalInfo } from "@/lib/data";
-import { useState } from "react";
+import { AnimatePresence, motion } from "framer-motion";
 import { Menu, X } from "lucide-react";
-import { motion, AnimatePresence } from "framer-motion";
+import { useState } from "react";
+import { personalInfo } from "@/lib/data";
+import ThemeToggle from "./ui/theme-toggle";
 
 export default function GlassHeader() {
 	const [isMenuOpen, setIsMenuOpen] = useState(false);

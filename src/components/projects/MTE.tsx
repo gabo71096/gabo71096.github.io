@@ -1,12 +1,12 @@
 import { motion } from "framer-motion";
-import MotionWrapper from "../MotionWrapper";
 import { Images, Info, Layers } from "lucide-react";
-import mteLogo from "@/images/mte/mte-logo.png";
 import admin from "@/images/mte/admin.png";
 import chat from "@/images/mte/chat.png";
 import index from "@/images/mte/index.png";
 import landing from "@/images/mte/landing.png";
+import mteLogo from "@/images/mte/mte-logo.png";
 import notebook from "@/images/mte/notebook.png";
+import MotionWrapper from "../MotionWrapper";
 import { ImageZoom } from "../ui/shadcn-io/image-zoom";
 import { Marquee, MarqueeContent, MarqueeItem } from "../ui/shadcn-io/marquee";
 

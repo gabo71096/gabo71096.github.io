@@ -1,5 +1,5 @@
-import { personalInfo } from "@/lib/data";
 import { motion } from "framer-motion";
+import { personalInfo } from "@/lib/data";
 
 export default function Footer() {
 	return (
