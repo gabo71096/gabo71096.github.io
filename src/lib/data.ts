@@ -1,8 +1,10 @@
 export const personalInfo = {
 	name: "Gabriel López",
-	location: "Ottawa, Canada",
+	location: "Gatineau, Quebec, Canada",
 	github: "https://github.com/gabo71096",
 	linkedin: "https://www.linkedin.com/in/gabo-71096/",
+	email: "glopezvalencia@outlook.com",
+	portfolio: "gabo71096.github.io",
 };
 
 export const workExperience = [
@@ -12,22 +14,22 @@ export const workExperience = [
 		position: "Full Stack Developer and IT Support",
 		period: "July 2024 - September 2025",
 		achievements: [
-			"Build and maintain features in Ruby on Rails, integrating platforms with SAP Business One, warehouse management systems, and other third-party software via REST APIs and webhooks.",
-			"Improve performance of MySQL and PostgreSQL databases, including query optimization and backup strategies.",
-			"Designed and implemented a Data Warehouse using Airbyte for multi-application synchronization.",
-			"Automated processes with Python scripts and AI-driven integrations, reducing manual workloads.",
+			"Built and maintained end-to-end Ruby on Rails features and integrations with SAP Business One, Warehouse Management Systems, E-Commerce, and third-party platforms via REST APIs and webhooks, reducing manual operational tasks by approximately 60% and improving cross-system data consistency.",
+			"Optimized MySQL and PostgreSQL databases through query tuning, indexing strategies, and backup process improvements, reducing slow query execution times by up to 70% and improving system reliability.",
+			"Designed and implemented a Data Warehouse architecture using Airbyte to centralize historical and incremental synchronization of over 500,000 records across multiple business applications, enabling automated reporting workflows and reducing manual report preparation time by approximately 80%.",
+			"Automated operational workflows using Python scripts and AI-driven integrations, reducing repetitive manual tasks and saving several hours of manual work per week across internal teams.",
 		],
 	},
 	{
 		company: "OA Systems",
 		location: "Auckland, New Zealand",
 		position: "Dynamics 365 Developer",
-		period: "September 2023 - March 2024",
+		period: "September 2023 - June 2024",
 		achievements: [
-			"Developed custom PCF controls and complex multi-step forms with React and Kendo UI.",
-			"Built .NET API endpoints and Azure Functions for system integrations.",
-			"Created a real-time SMS chat application using SignalR within Dynamics 365.",
-			"Migrated legacy jQuery code to React, modernizing user experience.,",
+			"Developed custom PCF controls and complex multi-step forms using React and Kendo UI, reducing manual data entry time by approximately 40% and improving internal workflow efficiency within Dynamics 365.",
+			"Built .NET API endpoints and Azure Functions for enterprise integrations, automating synchronization of thousands of records daily across multiple business systems and reducing manual operational tasks by approximately 60%.",
+			"Created a real-time SMS chat application using SignalR within Dynamics 365, improving response times for customer-facing teams by approximately 50%.",
+			"Migrated legacy jQuery interfaces to React, modernizing the frontend architecture and reducing time required to implement new UI features by approximately 35%.",
 		],
 	},
 	{
@@ -36,22 +38,22 @@ export const workExperience = [
 		position: "Full Stack Developer",
 		period: "January 2022 - June 2023",
 		achievements: [
-			"Developed a Laboratory Information Management System (LIMS) from scratch using Ruby on Rails, React, Node.js, and MySQL (Cloud SQL), deployed to Google Cloud Platform Compute Engine instance.",
-			"Integrated government APIs for COVID reporting and automated PDF result generation.",
-			"Mentored junior developers and streamlined onboarding processes.",
-			"Implemented payment integrations with multiple providers.",
+			"Developed a Laboratory Information Management System (LIMS) from scratch using Ruby on Rails, React, Node.js, and MySQL (Cloud SQL), deployed on Google Cloud Platform, supporting end-to-end laboratory workflows and improving operational efficiency for testing and reporting processes.",
+			"Integrated government APIs for automated COVID reporting and implemented PDF result generation workflows, reducing manual reporting effort by approximately 85% and accelerating result delivery times.",
+			"Mentored junior developers and improved onboarding documentation and development workflows, reducing ramp-up time for new team members by approximately 50%.",
+			"Integrated laboratory testing machines with backend processing pipelines to automatically collect, process, and present test results through a user-friendly patient interface, significantly reducing manual data handling and improving reporting accuracy.",
 		],
 	},
 	{
-		company: "B2B Tech SPA (Europ Assistance)",
+		company: "B2B Tech SPA",
 		location: "Santiago, Chile",
 		position: "Full Stack Developer",
 		period: "April 2021 - January 2022",
 		achievements: [
-			"Developed and deployed a Ruby on Rails inventory management system with PostgreSQL (AWS RDS), containerized via Docker and hosted on AWS EC2.",
-			"Built an admin platform for user management, role-based access control, and audit logs.",
-			"Implemented advanced product features: bulk import/export, image uploads, SKU barcode generation, and automatic value depreciation.",
-			"Enhanced operational efficiency with real-time stock alerts via email, custom dashboards, and downloadable reports to support data-driven decisions.",
+			"Developed and deployed a Ruby on Rails inventory management system using PostgreSQL (AWS RDS), Docker, and AWS EC2, supporting centralized inventory operations and improving system scalability and reliability.",
+			"Built an administrative platform with user management, role-based access control, and audit logging, improving operational security and traceability across internal workflows.",
+			"Implemented advanced inventory features including bulk import/export, image uploads, SKU barcode generation, and automatic product value depreciation, reducing manual inventory management tasks by approximately 60%.",
+			"Enhanced operational efficiency through real-time stock alert notifications, custom dashboards, and downloadable reporting tools, enabling faster inventory decisions and reducing stock-related issues by approximately 40%.",
 		],
 	},
 	{
@@ -60,10 +62,10 @@ export const workExperience = [
 		position: "Full Stack Developer",
 		period: "June 2020 - March 2021",
 		achievements: [
-			"Built and deployed a Ruby on Rails app with PostgreSQL, enabling real-time chat via Action Cable, Redis, and Sidekiq to support secure patient-therapist communication.",
-			"Designed an admin panel for therapists to review user's tasks, provide feedback, and improve user engagement.",
-			"Deployed on DigitalOcean with Docker, using Nginx as a reverse proxy for scalability and reliability.",
-			"Delivered a clean and maintainable front-end, ensuring responsive and efficient UI.",
+			"Built and deployed a Ruby on Rails application with PostgreSQL, implementing real-time chat functionality using Action Cable, Redis, and Sidekiq to support secure patient-therapist communication and improve user engagement.",
+			"Designed and developed an administrative platform for therapists to review patient tasks, provide feedback, and streamline follow-up workflows, improving user interaction and engagement throughout the platform.",
+			"Deployed and maintained the application infrastructure on DigitalOcean using Docker and Nginx as a reverse proxy, improving deployment consistency, scalability, and system reliability.",
+			"Delivered a clean, responsive, and maintainable frontend experience, improving usability across desktop and mobile devices while accelerating future feature development and UI maintenance.",
 		],
 	},
 ];

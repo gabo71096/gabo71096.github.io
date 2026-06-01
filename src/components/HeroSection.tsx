@@ -1,5 +1,5 @@
 import { personalInfo } from "@/lib/data";
-import { Github, MapPin, Linkedin } from "lucide-react";
+import { Github, MapPin, Linkedin, Mail, Globe } from "lucide-react";
 import { motion } from "framer-motion";
 import MotionWrapper from "./MotionWrapper";
 
@@ -64,6 +64,15 @@ export default function HeroSection() {
 							</motion.div>
 
 							<motion.a
+								href={`mailto:${personalInfo.email}`}
+								className="text-muted-foreground hover:text-foreground flex items-center text-sm transition-colors"
+								variants={childVariants}
+								whileHover={{ scale: 1.05, color: "#4b5563" }}
+							>
+								<Mail className="mr-2 h-4 w-4" />📧 {personalInfo.email}
+							</motion.a>
+
+							<motion.a
 								href={personalInfo.github}
 								target="_blank"
 								rel="noopener noreferrer"
@@ -83,6 +92,17 @@ export default function HeroSection() {
 								whileHover={{ scale: 1.05, color: "#4b5563" }}
 							>
 								<Linkedin className="mr-2 h-4 w-4" />🔗 LinkedIn
+							</motion.a>
+
+							<motion.a
+								href={`https://${personalInfo.portfolio}`}
+								target="_blank"
+								rel="noopener noreferrer"
+								className="text-muted-foreground hover:text-foreground flex items-center text-sm transition-colors"
+								variants={childVariants}
+								whileHover={{ scale: 1.05, color: "#4b5563" }}
+							>
+								<Globe className="mr-2 h-4 w-4" />🌐 Portfolio
 							</motion.a>
 						</motion.div>
 					</div>
@@ -110,13 +130,18 @@ export default function HeroSection() {
 						<p className="text-muted-foreground relative mb-4 py-2 pl-4">
 							<span className="absolute top-0 left-0 h-full w-1 rounded-full bg-gradient-to-b from-green-500 to-emerald-500"></span>
 							🚀 Software Engineer with {new Date().getFullYear() - 2020}+ years
-							of experience designing and delivering scalable web applications
-							and APIs across healthcare, logistics, and e-commerce industries.
-							Proficient in frameworks including Ruby on Rails, React, .NET, and
-							FastAPI, with strong expertise in relational databases
-							(PostgreSQL, MySQL) and cloud platforms (AWS, Azure, GCP). Adept
-							at building end-to-end solutions that improve performance,
-							reliability, and user experience.
+							of experience designing, building, and deploying scalable web
+							applications, APIs, and business-critical systems across
+							healthcare, logistics, and e-commerce industries. Experienced in
+							full-stack development using Ruby on Rails, React, Next.js, .NET,
+							and FastAPI, with strong expertise in PostgreSQL, MySQL, AWS,
+							Azure, and GCP. Proven track record delivering end-to-end
+							solutions including payment integrations, real-time systems,
+							dashboards, ERP integrations, workflow automation, and AI-powered
+							features that improve operational efficiency, reliability, and
+							user experience. Skilled at leveraging modern AI tools and
+							automation workflows to accelerate development and enhance product
+							capabilities.
 						</p>
 					</div>
 				</MotionWrapper>
