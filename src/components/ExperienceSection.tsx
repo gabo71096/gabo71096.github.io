@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Briefcase } from "lucide-react";
+import { Briefcase, ExternalLink } from "lucide-react";
 import { workExperience } from "@/lib/data";
 import MotionWrapper from "./MotionWrapper";
 import TimelineItem from "./TimelineItem";
@@ -35,6 +35,18 @@ export default function ExperienceSection() {
 							isLast={index === workExperience.length - 1}
 							index={index}
 						>
+							{job.company === "GL Labs" && (
+								<a
+									href="https://gl-labs.dev/"
+									target="_blank"
+									rel="noopener noreferrer"
+									aria-label="Visit GL Labs website (opens in new tab)"
+									className="mb-2 inline-flex items-center gap-1 text-sm font-medium text-green-600 hover:text-green-700 hover:underline"
+								>
+									GL Labs website
+									<ExternalLink className="h-3.5 w-3.5" aria-hidden="true" />
+								</a>
+							)}
 							<motion.div
 								className="mt-3 rounded-lg border border-green-500/20 bg-green-50/80 p-4 shadow-sm backdrop-blur-sm backdrop-filter dark:border-green-500/10 dark:bg-green-900/10"
 								initial={{ opacity: 0, y: 20 }}
@@ -53,7 +65,7 @@ export default function ExperienceSection() {
 								<ul className="ml-4 list-none space-y-2 text-sm">
 									{job.achievements.map((achievement, i) => (
 										<motion.li
-											key={i}
+											key={achievement}
 											className="text-muted-foreground relative pl-6"
 											initial={{ opacity: 0, x: -10 }}
 											whileInView={{ opacity: 1, x: 0 }}

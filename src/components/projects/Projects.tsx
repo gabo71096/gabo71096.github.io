@@ -66,6 +66,56 @@ export default function Projects() {
 					</motion.div>
 				</motion.div>
 			</a>
+
+			<a
+				href="https://gl-labs.dev/"
+				target="_blank"
+				rel="noopener noreferrer"
+				className="group block"
+			>
+				<motion.div
+					className="mb-8 flex flex-col justify-between md:flex-row md:items-center rounded-lg border border-purple-500/20 bg-purple-50/80 p-8 shadow-sm dark:border-purple-500/10 dark:bg-purple-900/10"
+					variants={containerVariants}
+					initial="hidden"
+					animate="visible"
+				>
+					<div className="text-center md:text-left">
+						<motion.div
+							className="mb-2 flex items-center justify-center gap-2 md:justify-start"
+							variants={childVariants}
+						>
+							<h2 className="text-4xl font-bold">GL Labs</h2>
+							<svg
+								className="h-6 w-6 text-muted-foreground transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5"
+								fill="none"
+								stroke="currentColor"
+								strokeWidth={2}
+								viewBox="0 0 24 24"
+								aria-hidden="true"
+							>
+								<path
+									strokeLinecap="round"
+									strokeLinejoin="round"
+									d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 16"
+								/>
+							</svg>
+						</motion.div>
+						<motion.p
+							className="text-muted-foreground text-xl"
+							variants={childVariants}
+						>
+							My independent software engineering studio.
+						</motion.p>
+					</div>
+
+					<motion.div
+						className="mt-6 flex justify-center md:mt-0"
+						variants={childVariants}
+					>
+						<span className="text-sm text-muted-foreground">gl-labs.dev</span>
+					</motion.div>
+				</motion.div>
+			</a>
 		</div>
 	);
 }
