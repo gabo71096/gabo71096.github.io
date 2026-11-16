@@ -1,13 +1,31 @@
 export const personalInfo = {
-	name: "Gabriel López",
+	name: "Gabriel Ignacio López Valencia",
+	role: "Software Engineer (Full Stack)",
 	location: "Gatineau, Quebec, Canada",
+	phone: "+1 (873) 455 9433",
 	github: "https://github.com/gabo71096",
 	linkedin: "https://www.linkedin.com/in/gabo-71096/",
 	email: "glopezvalencia@outlook.com",
 	portfolio: "gabo71096.github.io",
+	summary:
+		"Software Engineer and Founder with 6+ years of experience designing, developing, and deploying scalable web applications, APIs, and business-critical systems across healthcare, logistics, and e-commerce industries. Experienced in full-stack development using Ruby on Rails, React, Next.js, .NET, and FastAPI, with strong expertise in PostgreSQL, MySQL, AWS, Azure, and GCP. Proven ability to deliver end-to-end software solutions, from frontend development and backend architecture to third-party integrations, cloud deployment, and infrastructure management. Experienced in technical consulting, product development, payment integrations, real-time systems, dashboards, ERP integrations, workflow automation, and AI-powered features. Skilled at leveraging modern AI tools and automation workflows to accelerate development, solve complex technical challenges, and improve operational efficiency and product reliability.",
 };
 
 export const workExperience = [
+	{
+		company: "GL Labs",
+		location: "Gatineau, Canada",
+		position: "Founder & Software Engineer",
+		period: "May 2026 - Present",
+		achievements: [
+			"Founded and operated an independent software engineering studio focused on delivering custom digital solutions and software development services to businesses.",
+			"Designed and developed a responsive frontend for a painting business using Next.js, integrating Inngest for background workflows and Resend for transactional email delivery.",
+			"Managed website deployment on Vercel and domain infrastructure through Cloudflare, including domain registration, DNS configuration, security, and spam prevention using CAPTCHA.",
+			"Provided short-term software engineering consulting to a company facing development resource constraints, supporting existing infrastructure and product development.",
+			"Troubleshot and maintained self-hosted Airbyte deployments, addressing deployment issues, debugging connectors, and resolving infrastructure-related problems.",
+			"Developed and enhanced backend functionality using Ruby on Rails, contributing to API development, business logic, database operations, bug fixes, and code improvements.",
+		],
+	},
 	{
 		company: "Grupo Amoble",
 		location: "Santiago, Chile",
@@ -57,7 +75,7 @@ export const workExperience = [
 		],
 	},
 	{
-		company: "Mamá, Te Entiendo",
+		company: "Mama, Te Entiendo",
 		location: "Santiago, Chile",
 		position: "Full Stack Developer",
 		period: "June 2020 - March 2021",
@@ -73,10 +91,10 @@ export const workExperience = [
 export const education = [
 	{
 		institution: "Instituto Profesional Providencia",
-		location: "Santiago, Chile",
+		location: "Chile",
 		degree: "Associate Degree in Information Technology",
-		period: "2018 - 2022",
-		gpa: "📋 GPA: 4.0 / 4.0 (Summa cum laude)",
+		period: "Graduation Year 2022",
+		gpa: "📋 GPA: 4.00 / 4.00 (Summa cum laude)",
 	},
 ];
 export const skills = {
@@ -85,17 +103,17 @@ export const skills = {
 		"Python",
 		"TypeScript",
 		"C#",
+		"SQL",
 		"HTML",
 		"CSS",
-		"SQL",
 	],
 	frameworks: [
 		"Ruby on Rails",
 		".NET",
 		"FastAPI",
 		"Express.js",
-		"Next.js",
 		"React",
+		"Next.js",
 	],
 	databaseAndStorage: ["PostgreSQL", "MySQL", "MongoDB"],
 	cloudAndDevOps: [

@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Globe, Mail, MapPin } from "lucide-react";
+import { Globe, Mail, MapPin, Phone } from "lucide-react";
 import { siGithub } from "simple-icons";
 import { personalInfo } from "@/lib/data";
 import MotionWrapper from "./MotionWrapper";
@@ -49,7 +49,7 @@ export default function HeroSection() {
 							className="text-muted-foreground mb-6 text-xl"
 							variants={childVariants}
 						>
-							Software Engineer 👨‍💻
+							{personalInfo.role} 👨‍💻
 						</motion.p>
 
 						<motion.div
@@ -71,6 +71,15 @@ export default function HeroSection() {
 								whileHover={{ scale: 1.05, color: "#4b5563" }}
 							>
 								<Mail className="mr-2 h-4 w-4" />📧 {personalInfo.email}
+							</motion.a>
+
+							<motion.a
+								href={`tel:${personalInfo.phone.replace(/[^\d+]/g, "")}`}
+								className="text-muted-foreground hover:text-foreground flex items-center text-sm transition-colors"
+								variants={childVariants}
+								whileHover={{ scale: 1.05, color: "#4b5563" }}
+							>
+								<Phone className="mr-2 h-4 w-4" />📞 {personalInfo.phone}
 							</motion.a>
 
 							<motion.a
@@ -150,19 +159,7 @@ export default function HeroSection() {
 					<div className="rounded-lg border border-green-500/20 bg-gradient-to-r from-green-500/10 to-emerald-500/10 p-4 shadow-sm backdrop-blur-sm backdrop-filter dark:border-green-500/10">
 						<p className="text-muted-foreground relative mb-4 py-2 pl-4">
 							<span className="absolute top-0 left-0 h-full w-1 rounded-full bg-gradient-to-b from-green-500 to-emerald-500"></span>
-							🚀 Software Engineer with {new Date().getFullYear() - 2020}+ years
-							of experience designing, building, and deploying scalable web
-							applications, APIs, and business-critical systems across
-							healthcare, logistics, and e-commerce industries. Experienced in
-							full-stack development using Ruby on Rails, React, Next.js, .NET,
-							and FastAPI, with strong expertise in PostgreSQL, MySQL, AWS,
-							Azure, and GCP. Proven track record delivering end-to-end
-							solutions including payment integrations, real-time systems,
-							dashboards, ERP integrations, workflow automation, and AI-powered
-							features that improve operational efficiency, reliability, and
-							user experience. Skilled at leveraging modern AI tools and
-							automation workflows to accelerate development and enhance product
-							capabilities.
+							🚀 {personalInfo.summary}
 						</p>
 					</div>
 				</MotionWrapper>
